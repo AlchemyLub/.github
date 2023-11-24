@@ -1,6 +1,6 @@
 # FloralHub
 
-This repository contains a collection of microservices for a non-existing aggregator of flower shops. The purpose of this repository is to provide a tutorial for understanding fault tolerance patterns and exploring code examples related to microservices architecture.
+This organization contains a collection of microservices for a non-existing aggregator of flower shops. The purpose of this repository is to provide a tutorial for understanding fault tolerance patterns and exploring code examples related to microservices architecture.
 
 ## Purpose
 The main objective of this repository is to serve as a learning resource for developers interested in understanding fault tolerance patterns in microservices architecture. By studying the code and examples provided in this repository, users can gain a better understanding of how to design and implement resilient microservices.
