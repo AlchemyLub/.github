@@ -1,6 +1,4 @@
-<p style="text-align:center;font-size: 3em">FloralHub</p>
-
-# Microservices Repository for Flower Shop Aggregator
+# FloralHub
 
 This repository contains a collection of microservices for a non-existing aggregator of flower shops. The purpose of this repository is to provide a tutorial for understanding fault tolerance patterns and exploring code examples related to microservices architecture.
 
