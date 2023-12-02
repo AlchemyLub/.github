@@ -13,19 +13,21 @@ The repository is structured in a way that highlights different fault tolerance 
 
 The following are the key components included in this repository:
 
-1. Store Aggregator Service: Responsible for aggregating various flower stores and their products, including pricing, availability, and location.
+1. Florist: service responsible for aggregating various flower stores and their products, including pricing, availability, and location.
 
-2. Order Service: Provides the opportunity to place an order for flowers, abstracting from the information from which store they will be delivered. 
+2. Gatekeeper: service is used to securely manage and control access to resources and confidential information within the organization. Used in conjunction with [Zitadel](https://zitadel.com/). 
 
-3. Delivery Service: Manages the logistics of delivering flowers from different stores to the specified addresses.
+3. DeliveryControlCenter: service manages the logistics of delivering flowers from different stores to the specified addresses.
 
-4. Rating and Review Service: Handles customer ratings and reviews for the flower stores, delivery service, and overall customer experience.
+4. FeedbackForge: service handles customer ratings and reviews for the flower stores, delivery service, and overall customer experience.
 
-5. Inventory Management Service: Tracks and updates the inventory of flowers and products available at each flower store.
+5. EventHub: service provides management of the event system and also stores a history of changes.
 
-6. Payment Gateway Service: Manages the processing of payments for the floral orders, ensuring secure transactions and compliance with different payment methods.
+6. PaymentDefender: service manages the processing of payments for the floral orders, ensuring secure transactions and compliance with different payment methods.
 
-7. Customer Notification Service: Sends notifications to customers regarding order status, delivery updates, and special promotions.
+7. Notifier: service sends notifications to customers regarding order status, delivery updates, and special promotions.
+
+8. Gateway: service acts as an entry point for client requests, routing those requests to the appropriate microservices.
 
 Additionally, the repository includes documentation, code examples, and configurations that demonstrate fault tolerance patterns such as circuit breaking, retry mechanisms, and graceful degradation.
 
