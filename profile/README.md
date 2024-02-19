@@ -1,52 +1,51 @@
 # FloralHub
 
-This organization contains a collection of microservices for a non-existing aggregator of flower shops. The purpose of this repository is to provide a tutorial for understanding fault tolerance patterns and exploring code examples related to microservices architecture.
+Этот репозиторий содержит коллекцию микросервисов для агрегатора цветочных магазинов. Цель репозитория - предоставить учебник для понимания паттернов отказоустойчивости и изучения примеров кода, связанных с микросервисной архитектурой.
 
-## Purpose
-The main objective of this repository is to serve as a learning resource for developers interested in understanding fault tolerance patterns in microservices architecture. By studying the code and examples provided in this repository, users can gain a better understanding of how to design and implement resilient microservices.
+## Назначение
+Цель этого репозитория - служить обучающим ресурсом для разработчиков, заинтересованных в понимании паттернов отказоустойчивости в микросервисной архитектуре. Изучая код и примеры, представленные в этом репозитории, пользователи смогут лучше понять, как проектировать и реализовывать отказоустойчивую микросервисную систему.
 
-## Disclaimer
-It is important to note that the services and information provided in this repository are purely fictional and do not correspond to any real services or flower shops. The purpose of the code and examples is solely for educational and tutorial purposes.
+## Отказ от ответственности
+Важно отметить, что информация, представленная в этом репозитории, является вымышленной и не соответствуют каким-либо реальным компаниям или цветочным магазинам. Код и примеры предназначены исключительно для образовательных целей.
 
-## Repository Structure
-The repository is structured in a way that highlights different fault tolerance patterns commonly used in microservices architectures. Each microservice focuses on a specific aspect of the flower shop aggregator system.
+## Структура репозитория
+Репозиторий структурирован таким образом, чтобы выделить различные паттерны отказоустойчивости, обычно используемые в микросервисной архитектуре. Каждый микросервис фокусируется на определенном аспекте системы агрегатора цветочных магазинов.
 
-The following are the key components included in this repository:
+Ниже перечислены ключевые компоненты, включенные в этот репозиторий:
 
-1. Florist: service responsible for aggregating various flower stores and their products, including pricing, availability, and location.
+1. Florist: сервис, отвечающий за агрегацию различных цветочных магазинов и их товаров, включая цены, наличие и местоположение.
 
-2. Gatekeeper: service is used to securely manage and control access to resources and confidential information within the organization. Used in conjunction with [Zitadel](https://zitadel.com/). 
+2. Gatekeeper: сервис используется для безопасного управления и контроля доступа к ресурсам и конфиденциальной информации в организации. Используется в сочетании с [Zitadel](https://zitadel.com/).
 
-3. DeliveryControlCenter: service manages the logistics of delivering flowers from different stores to the specified addresses.
+3. DeliveryControlCenter: сервис управляет логистикой доставки цветов из разных магазинов по указанным адресам.
 
-4. FeedbackForge: service handles customer ratings and reviews for the flower stores, delivery service, and overall customer experience.
+4. FeedbackForge: сервис обрабатывает оценки и отзывы клиентов о цветочных магазинах, службе доставки и общем опыте работы с ними.
 
-5. EventHub: service provides management of the event system and also stores a history of changes.
+5. EventHub: сервис обеспечивает управление системой событий, а также хранит историю изменений.
 
-6. PaymentDefender: service manages the processing of payments for the floral orders, ensuring secure transactions and compliance with different payment methods.
+6. PaymentDefender: сервис управляет обработкой платежей, обеспечивая безопасность транзакций и соответствие различным методам оплаты.
 
-7. Notifier: service sends notifications to customers regarding order status, delivery updates, and special promotions.
+7. Notifier: сервис отправляет клиентам уведомления о статусе заказа, обновлениях доставки и специальных акциях.
 
-8. Gateway: service acts as an entry point for client requests, routing those requests to the appropriate microservices.
+8. Gateway: сервис выступает в качестве точки входа для клиентских запросов, направляя их в соответствующие микросервисы.
 
-9. Arch: A service for providing architectural diagrams of a project. Keeps schemes up to date both for a specific service and for the whole project.
+9. Arch: сервис для предоставления архитектурных схем проекта. Поддерживает актуальность схем как для конкретного сервиса, так и для всей системы в целом.
 
-Additionally, the repository includes documentation, code examples, and configurations that demonstrate fault tolerance patterns such as circuit breaking, retry mechanisms, and graceful degradation.
+Кроме того, репозиторий содержит документацию, примеры кода и конфигурации, демонстрирующие такие модели отказоустойчивости, как Сircuit breaker, Retry и пр.
 
-## How to Use
-To explore the repository and learn from the code examples, follow these steps:
+## Как использовать
+Чтобы изучить репозиторий и ознакомиться с примерами кода, выполните следующие действия:
 
-1. Clone the repository to your local machine.
-2. Navigate to each microservice directory and review the relevant code, configurations, and documentation.
-3. Experiment with different fault tolerance patterns implemented in the microservices. Modify the code and observe the behavior to gain hands-on experience.
-4. Refer to the provided tutorials and guides for detailed explanations of the fault tolerance patterns and their implementation.
+1. Клонируйте репозиторий на локальную машину.
+2. Перейдите в каталог каждого микросервиса и просмотрите соответствующий код, конфигурации и документацию.
+3. Экспериментируйте с различными паттернами отказоустойчивости, реализованными в микросервисах. Модифицируйте код и наблюдайте за его поведением, чтобы получить практический опыт.
 
-> Please note that this repository is intended for educational purposes only and should not be deployed in a production environment.
+> Обратите внимание, что этот репозиторий предназначен только для образовательных целей и не должен быть развернут в производственной среде.
 
-## Contribution
-Contributions to this repository are welcomed. If you have any suggestions, improvements, or additional fault tolerance patterns that could be added to the examples, feel free to open a pull request or create an issue.
+## Вклад
+Вклад в этот репозиторий приветствуется. Если у вас есть предложения, улучшения или дополнительные модели отказоустойчивости, которые можно добавить к примерам, не стесняйтесь открыть Pull request или создать Issue.
 
-However, since the purpose of this repository is purely educational, it is important to maintain a clear distinction between fictional services and real services. Please ensure that any contributions align with the goal of providing learning resources rather than creating real-world solutions.
+Однако, поскольку цель этого репозитория - исключительно образовательная, важно проводить четкое различие между вымышленными и реальными сервисами. Пожалуйста, убедитесь, что любой вклад соответствует цели предоставления обучающих ресурсов, а не создания реальных решений.
 
-## License
-This repository is licensed under the MIT License. See the LICENSE file for more information.
+## Лицензия
+Этот репозиторий лицензирован в соответствии с лицензией MIT. Дополнительную информацию см. в файле LICENSE.
