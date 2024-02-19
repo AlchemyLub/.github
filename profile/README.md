@@ -29,6 +29,8 @@ The following are the key components included in this repository:
 
 8. Gateway: service acts as an entry point for client requests, routing those requests to the appropriate microservices.
 
+9. Arch: A service for providing architectural diagrams of a project. Keeps schemes up to date both for a specific service and for the whole project.
+
 Additionally, the repository includes documentation, code examples, and configurations that demonstrate fault tolerance patterns such as circuit breaking, retry mechanisms, and graceful degradation.
 
 ## How to Use
